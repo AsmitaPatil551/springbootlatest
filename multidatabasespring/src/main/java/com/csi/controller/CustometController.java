@@ -24,4 +24,11 @@ public class CustometController {
     public ResponseEntity<List<Customer>>getAllData(){
         return ResponseEntity.ok(customerServiceImpl.getAllData());
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String>sayHello(){
+        return ResponseEntity.ok("WELCOM TO CSI FINTECH");
+
+
+    }
 }
